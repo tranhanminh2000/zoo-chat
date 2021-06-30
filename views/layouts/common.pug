@@ -1,0 +1,20 @@
+html 
+    head 
+        title CHATTING DEMO APP
+        script(src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous") 
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+        script(src="/static/time.js")
+        script(src="/static/randomimg.js")
+        script(src="/static/chatmain.js")
+        link(rel="stylesheet", href="/static/style.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    body 
+        nav.navbar.navbar-expand-lg.navbar-dark
+            a.navbar-brand(href="/")    
+                h2 ZooChat 
+            .navbar-nav.ml-auto
+                button(type="button").btn#btnLogout Logout
+
+        .container.pt-5
+            block content

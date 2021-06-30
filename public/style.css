@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap");
+:root {
+  --myfont: "arial", cursive;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+nav > a > h2 {
+  font-family: "Kirang Haerang", cursive;
+  font-family: "Staatliches", cursive;
+}
+body {
+  background: url("/static/images/orage.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* NAVBAR */
+.navbar {
+  /* content:"123"; */
+  border-bottom: 0.003rem solid white;
+}
+
+nav .btn {
+  display: none;
+  background-color: rgba(255, 255, 255);
+  border: 1px solid white !important;
+  border-radius: 20px !important;
+  color: orange;
+  font-size: 12px !important;
+}
+nav .btn:hover {
+  background-color: #fe6507;
+  color: white;
+}
+/* </NAVBAR> */
+
+/* start */
+#start {
+  margin-top: 35%;
+  text-align: center;
+}
+/* </start */
+
+/* login */
+#sectionLogin {
+  width: 100%;
+  box-sizing: border-box;
+  /* display: flex; */
+  display: none;
+  background-color: #fe6507;
+}
+#loginForm {
+  width: 30%;
+  height: 500px;
+  margin-right: 10px;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+#loginForm > img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 30%;
+  margin-bottom: 10%;
+  display: block;
+  border-radius: 100%;
+  border: 5px solid orangered;
+  transition: all 1s;
+  box-shadow: 0 5px 5px 5px rgb(64 60 67 / 16%);
+}
+#loginForm > input {
+  display: block;
+  margin: 0px auto 10%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+#loginForm > input:focus {
+  outline: none;
+}
+#loginForm > h4 {
+  font-family: var(--myfont);
+}
+#loginForm > .btn {
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+#panelForm {
+  width: 70%;
+  height: 500px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+#panelForm > #insidePanel {
+  font-family: var(--myfont);
+  width: 100%;
+  height: 100%;
+  background: url(/static/images/meowchat.gif), url(/static/images/chat.gif);
+  background-repeat: no-repeat;
+  background-position-x: 100%, 50%;
+  background-position-y: bottom, 50%;
+  padding: 20px;
+}
+#panelForm > #insidePanel > ul {
+  margin-left: 20px;
+}
+/* </login */
+
+/*chat */
+#sectionChat {
+  /* display: flex; */
+  display: none;
+  box-sizing: border-box;
+  background-color: #fe6507;
+  font-family: var(--myfont);
+  margin-bottom: 30px
+}
+#userForm {
+  width: 30%;
+  height: 550px;
+  background: white;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+#userForm h1{
+  margin-bottom: 0px !important;
+}
+#userList {
+  padding: 2px 3px 0px 3px;
+  height: 85%;
+
+}
+#userList::-webkit-scrollbar {
+  display: none;
+}
+
+#userList > h4 {
+  font-family: var(--myfont);
+}
+
+#chatForm {
+  width: 70%;
+  height: 550px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#chatForm > #insideChat {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    overflow-Y: scroll;
+    overflow-X: none; 
+    display: flex;
+    flex-direction: column-reverse;
+  }
+#chatForm > #insideChat::-webkit-scrollbar {
+    display: none;
+}
+/* chat */
+
+.userComponent {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.userComponent .img {
+  width: 70px ; 
+}
+.userComponent .img img{
+    width: 50px ; 
+    height: 50px ;
+    display: block;
+    border-radius: 100%;
+    border: 2px solid orangered;
+  }
+.infor {
+  margin-left: 5px;
+  width: 100%;
+  /* background:blue; */
+}
+.infor div:nth-child(2) {
+  color: green;
+  font-weight: bold;
+}
+#dot {
+  margin-right: 3px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #888;
+  background: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+#inputChat {
+  display: flex;
+}
+#inputchat > #inputMess {
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  border: 3px solid #007bff;
+}
+
+#inputChat > .btn-primary {
+  border-radius: 0px 5px 5px 0px !important;
+}
+#chatForm > h1 {
+  display: inline;
+}
+#chatForm > #time {
+  display: inline;
+  float: right;
+  text-align: center;
+}
+
+#message-warpper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#block-userinfo {
+  width: 50px;
+  height: 50px;
+}
+#block-userinfo #username {
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+#block-userinfo img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid blue;
+    margin: auto;
+}
+#block-content{
+    margin-left: 5px;
+}
+#block-content #content {
+  color: white;
+  display: inline-block;
+  background: #007bff;
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 34px;
+  max-width: 300px;
+  word-wrap: break-word;    
+}
+#sendTime {
+  font-size: 11px;
+  margin: 0px 3px 0px 3px;
+}
+
+#threedot {
+    width: 100%;
+    height: 20px;
+    background: url(/static/images/threedot.gif);
+    background-position: 0px -80px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    visibility: hidden;
+}
+

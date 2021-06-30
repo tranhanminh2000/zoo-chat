@@ -1,0 +1,39 @@
+extends ./layouts/common.pug
+block content
+    #start
+        button(type='button')#btnStart.btn.btn-primary Start
+    #sectionLogin    
+        #loginForm 
+            img(src="/static/animal/giraffe.jpg")
+            h4 What your name?
+            input(type="text" maxlength="10" placeholder="Ex: Minh" onkeypress="return event.charCode != 32")#username
+            button(type="button" value="Register").btn.btn-primary#btnRegister Next
+        #panelForm  
+            #insidePanel  
+                h1 Chat App power by:
+                ul
+                    li Express
+                    li socket.io 
+
+    #sectionChat    
+        #userForm 
+            h1 List
+            #userList
+                .userComponent
+                    img(src='https://loremflickr.com/320/240', width='100px')
+                    .infor
+                        #name Tu
+                        div
+                            span#dot
+                            | Online
+                        div
+                            span(style='font-weight: bold') Batdau:
+                            |  32/43/2000
+        #chatForm  
+            h1 Chats
+            #time  
+            #insideChat 
+            #threedot
+            #inputChat
+                input(type="text")#inputMess
+                button(type="button" value="")#btnSendMess.btn.btn-primary Send
